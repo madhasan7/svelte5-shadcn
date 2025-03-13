@@ -5,7 +5,7 @@
 	import { Label } from "$lib/components/ui/label/index.js";
 </script>
 
-<Card.Root class="mx-auto max-w-sm">
+<Card.Root class="mx-auto max-w-sm w-[350px]">
 	<Card.Header>
 		<Card.Title class="text-2xl">Login</Card.Title>
 		<Card.Description>Enter your email below to login to your account</Card.Description>
@@ -14,7 +14,7 @@
 		<div class="grid gap-4">
 			<div class="grid gap-2">
 				<Label for="email">Email</Label>
-				<Input id="email" type="email" placeholder="m@example.com" required />
+				<Input id="email" type="email" placeholder="user@example.com" required />
 			</div>
 			<div class="grid gap-2">
 				<div class="flex items-center">
@@ -27,10 +27,11 @@
 			</div>
 			<Button type="submit" class="w-full">Login</Button>
 			<Button variant="outline" class="w-full">Login with Google</Button>
+			<Button variant="outline" class="w-full">Login with Github</Button>
 		</div>
 		<div class="mt-4 text-center text-sm">
 			Don't have an account?
-			<a href="##" class="underline"> Sign up </a>
+			<a href="/signup" class="underline"> Sign up </a>
 		</div>
 	</Card.Content>
 </Card.Root>

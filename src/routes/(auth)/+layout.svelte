@@ -1,7 +1,7 @@
 <script lang="ts">
-	import LoginForm from "$lib/components/login/login-form.svelte";
+	let { children } = $props();
 </script>
 
 <div class="flex h-screen w-full items-center justify-center px-4">
-	<LoginForm />
+    {@render children()}
 </div>
